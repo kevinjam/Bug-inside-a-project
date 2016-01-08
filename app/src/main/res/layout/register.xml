@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent" android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.kevinjanvier.slauversion1.Signup.RegisterPage">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="56dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+
+            >
+
+            <ImageView
+                android:background="@drawable/profile_sample"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+        </android.support.v7.widget.CardView>
+        <!--<RelativeLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<android.support.design.widget.FloatingActionButton-->
+                <!--android:id="@+id/register_facePic"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:src="@drawable/ic_camera"-->
+                <!--app:borderWidth="2dp"-->
+                <!--app:layout_anchorGravity="bottom|right|end"-->
+                <!--/>-->
+
+
+        <!--</RelativeLayout>-->
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_action_user"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/txtopbm"
+                android:layout_marginTop="@dimen/txtopbm"
+                >
+
+                <EditText
+                    android:id="@+id/usernamedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mgleft"
+                    android:hint="@string/username"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_email"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/txtopbm"
+                android:layout_marginTop="@dimen/txtopbm">
+
+                <EditText
+                    android:id="@+id/emailedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mgleft"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_phone"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/txtopbm"
+                android:layout_marginTop="@dimen/txtopbm"
+                >
+
+                <EditText
+                    android:id="@+id/phonedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mgleft"
+                    android:hint="@string/phonenumber"
+                    android:inputType="phone"/>
+            </android.support.design.widget.TextInputLayout>
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/ic_password"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/txtopbm"
+                android:layout_marginTop="@dimen/txtopbm"
+                app:counterEnabled="true"
+                app:counterMaxLength="10">
+
+                <EditText
+                    android:id="@+id/passwordedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mgleft"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"/>
+
+            </android.support.design.widget.TextInputLayout>
+        </TableRow>
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonregister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
+            android:padding="10dp"
+            android:text="@string/register"/>
+
+        <TextView android:id="@+id/linkSignup"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="24dp"
+                  android:gravity="center"
+                  android:text="No account yet? Create one"
+                  android:textSize="16dip"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

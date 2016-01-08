@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.kevinjanvier.slauversion1.MainActivity">
+    <item android:id="@+id/action_settings"
+          android:orderInCategory="100"
+          android:title="@string/action_settings"
+          app:showAsAction="never"/>
+
+      <!-- Search Icon-->
+      <item android:id="@+id/action_search"
+            android:orderInCategory="200"
+            android:title="Search"
+            android:icon="@drawable/ic_search"
+            app:showAsAction="ifRoom"/>
+      <!-- Map Icon-->
+      <item android:id="@+id/mapact"
+          android:title="@string/map"
+            android:icon="@drawable/message"
+          android:orderInCategory="300"
+          app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/menuLogout"
+          android:title="Logout"/>
+</menu>
